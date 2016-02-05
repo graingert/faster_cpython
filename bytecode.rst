@@ -40,5 +40,4 @@ Bytecode
 * `diving-into-byte-code-optimization-in-python
   <http://www.slideshare.net/cjgiridhar/diving-into-byte-code-optimization-in-python>`_
 * `BytecodeAssembler <http://pypi.python.org/pypi/BytecodeAssembler>`_
-* `Hacking Python bytecode <http://geofft.mit.edu/blog/sipb/73>`_
 
