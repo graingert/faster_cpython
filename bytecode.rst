@@ -33,10 +33,12 @@ Should be rewritten as an :ref:`AST optimizer <ast-optimizers>`.
 Bytecode
 ========
 
-* `byteplay <http://code.google.com/p/byteplay/>`_
+* `byteplay <https://github.com/serprex/byteplay>`_:
+  `byteplay documentation <https://wiki.python.org/moin/ByteplayDoc>`_
+  (see also the `old byteplay hosted on Google Code
+  <http://code.google.com/p/byteplay/>`_)
 * `diving-into-byte-code-optimization-in-python
   <http://www.slideshare.net/cjgiridhar/diving-into-byte-code-optimization-in-python>`_
 * `BytecodeAssembler <http://pypi.python.org/pypi/BytecodeAssembler>`_
-* `ByteplayDoc <http://wiki.python.org/moin/ByteplayDoc>`_
 * `Hacking Python bytecode <http://geofft.mit.edu/blog/sipb/73>`_
 
