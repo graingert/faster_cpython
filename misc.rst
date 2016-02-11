@@ -56,7 +56,7 @@ Done
 .. note::
 
    "readonly" is no more a good name for the project. The name comes from
-   a first implementation using ead-only code.
+   a first implementation using read-only code.
 
 To do
 -----
@@ -116,7 +116,7 @@ Why not a JIT?
 
 * write a JIT is much more complex, it requires deep changes in CPython;
   CPython code is old (+20 years)
-* cost to "warn up" the JIT: Mercurial project is concerned by the Python
+* cost to "warm up" the JIT: Mercurial project is concerned by the Python
   startup time
 * Store generated machine code?
 
