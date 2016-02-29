@@ -27,6 +27,18 @@ Latest enhancement::
     arbitrarily complex expressions.  This also fixes a 3.2 regression where
     operations involving negative numbers were not constant-folded.
 
+Compiler enhancement to reduce the number of stupid jumps::
+
+    changeset:   92460:c0ca9d32aed4
+    user:        Antoine Pitrou <solipsis@pitrou.net>
+    date:        Thu Sep 18 03:06:50 2014 +0200
+    files:       Lib/test/test_dis.py Misc/NEWS Python/compile.c
+    description:
+    Closes #11471: avoid generating a JUMP_FORWARD instruction at the end
+    of an if-block if there is no else-clause.
+
+    Original patch by Eugene Toder.
+
 Should be rewritten as an :ref:`AST optimizer <ast-optimizers>`.
 
 
