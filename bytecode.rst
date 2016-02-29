@@ -45,6 +45,7 @@ Should be rewritten as an :ref:`AST optimizer <ast-optimizers>`.
 Bytecode
 ========
 
+* `bytecode <https://bytecode.readthedocs.org/>`_
 * `byteplay <https://github.com/serprex/byteplay>`_:
   `byteplay documentation <https://wiki.python.org/moin/ByteplayDoc>`_
   (see also the `old byteplay hosted on Google Code
