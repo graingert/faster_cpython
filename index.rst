@@ -21,9 +21,6 @@ Contents:
    gil.rst
    implementations.rst
    benchmarks.rst
-   pep_dict_version.rst
-   pep_specialize.rst
-   pep_ast.rst
    pypy.rst
    talks.rst
    links.rst
