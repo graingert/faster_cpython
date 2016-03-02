@@ -7,6 +7,7 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
+   cpython36.rst
    fat_python.rst
    mutable.rst
    optimizations.rst
