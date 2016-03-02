@@ -1,6 +1,6 @@
-*******************************
-Projets to optimize CPython 3.6
-*******************************
+********************************
+Projects to optimize CPython 3.6
+********************************
 
 Complete or almost complete projects
 ====================================
