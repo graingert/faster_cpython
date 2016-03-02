@@ -70,9 +70,13 @@ Micro optimizations
 Experimental projects
 =====================
 
-* Wordcode bytecode
+* More efficient and/or more compact bytecode?
 
-  * Owner: Serhiy?
+  * [Python-ideas] `Wordcode v2, moved from -dev
+    <https://mail.python.org/pipermail/python-ideas/2016-February/038586.html>`_
+  * [Python-ideas] `More compact bytecode
+    <https://mail.python.org/pipermail/python-ideas/2016-February/038276.html>`_
+  * Owner: Demur Rumed? Serhiy Storchaka?
   * Speed-up: unknown.
   * See also `Speed-up oparg decoding on little-endian machines
     <https://bugs.python.org/issue25823>`_ (speedup: 10% faster on
