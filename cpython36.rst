@@ -5,6 +5,11 @@ Projects to optimize CPython 3.6
 Complete or almost complete projects
 ====================================
 
+* `Wordcode <http://bugs.python.org/issue26647>`_
+
+  * New format of bytecode which will allow to fetch opcode+oparg in a single
+    16-bit operation.
+
 * :ref:`FAT Python <fat-python>`: PEP 509, PEP 510, PEP 511, fat and
   fatoptimizer.
 
@@ -69,6 +74,12 @@ Micro optimizations
 
 Experimental projects
 =====================
+
+* Change bytecode to optimize MAKE_FUNCTION, maybe also CALL_FUNCTION:
+
+  * http://comments.gmane.org/gmane.comp.python.devel/157321
+  * See also the optimization on CALL_FUNCTION with keyword parameters, but it
+    requires FAT Python: https://bugs.python.org/issue26802#msg263775
 
 * More efficient and/or more compact bytecode?
 
