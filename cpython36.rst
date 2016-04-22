@@ -120,3 +120,6 @@ Experimental projects
 
   * Speed-up: probably negligible, and the Python optimizer is much slower
     than the C optimizer.
+
+* `INCA: Inline Caching meets Quickening in Python 3.3
+  <https://bugs.python.org/issue14757>`_
