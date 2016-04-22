@@ -37,6 +37,8 @@ Micro optimizations
   <https://bugs.python.org/issue26110>`_
 
   * Owner: Yury Selivanov
+  * `Opcode cache in ceval loop
+    <https://mail.python.org/pipermail/python-dev/2016-February/143025.html>`_
   * Speedup: up to 21% faster on specific perf.py macro (micro?) benchmarks
     (call_method, call_method_slots, call_method_unknown).
   * Related to `implement per-opcode cache in ceval
