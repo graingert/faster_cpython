@@ -75,6 +75,27 @@ Micro optimizations
 Experimental projects
 =====================
 
+* FASTCALL: avoid creation of temporary tuple/dict when calling C and Python
+  functions
+
+  * `Add a new _PyObject_FastCall() function which avoids the creation of a
+    tuple or dict for arguments
+    <http://bugs.python.org/issue26814>`_
+  * property_descr_get:
+
+    * `segfault due to null pointer in tuple
+      <http://bugs.python.org/issue26811>`_
+    * `Correct reuse argument tuple in property descriptor
+      <http://bugs.python.org/issue24276>`_
+    * `property_descr_get reuse argument tuple
+      <http://bugs.python.org/issue23910>`_
+
+  * `Tuple creation is too slow
+    <http://bugs.python.org/issue23507>`_
+  * `C implementation of functools.lru_cache
+    <http://bugs.python.org/issue14373>`_
+
+
 * Change bytecode to optimize MAKE_FUNCTION, maybe also CALL_FUNCTION:
 
   * http://comments.gmane.org/gmane.comp.python.devel/157321
