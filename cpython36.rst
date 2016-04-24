@@ -22,7 +22,7 @@ Complete or almost complete projects
   * Owner: Alecsandru Patrascu
   * Speed-up: unknown.
 
-* `Change PyMem_Malloc to use PyObject_Malloc allocator?
+* **MERGED**: `Change PyMem_Malloc to use PyObject_Malloc allocator?
   <https://bugs.python.org/issue26249>`_
 
   * Owner: Victor Stinner
