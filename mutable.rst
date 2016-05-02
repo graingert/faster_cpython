@@ -177,9 +177,10 @@ Dummy example::
     def func(x, y):
         return x + y
 
-This function ``func()`` is pure: it has no side effect. This function will not
-override builtins, not modify local variables of the caller, etc. It is safe to
-call this function from anywhere.
+This function ``func()`` is pure if `x` and `y` are `int`: it has no side
+effect, the output only depends on the inputs. This function will not override
+builtins, not modify local variables of the caller, etc. It is safe to call
+this function from anywhere using guards on the type of `x` and `y` arguments.
 
 It is possible to analyze the code to check that an optimization can be
 enabled.
