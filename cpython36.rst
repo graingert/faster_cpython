@@ -79,6 +79,9 @@ Micro optimizations
 Experimental projects
 =====================
 
+* `co_stacksize is calculated from unoptimized code
+  <https://bugs.python.org/issue26549>`_
+
 * FASTCALL: avoid creation of temporary tuple/dict when calling C and Python
   functions
 
