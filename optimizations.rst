@@ -3,7 +3,7 @@ Optimizations
 *************
 
 See also `fatoptimizer optimizations
-<https://fatoptimizer.readthedocs.org/en/latest/optimizations.html>`_.
+<https://fatoptimizer.readthedocs.io/en/latest/optimizations.html>`_.
 
 Inline function calls
 =====================

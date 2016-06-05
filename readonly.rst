@@ -35,7 +35,7 @@ modification, a callback is called with the object and the modified attribute.
 
 This machinery should help static optimizers. See this article for more
 information:
-http://haypo-notes.readthedocs.org/faster_cpython.html
+https://haypo-notes.readthedocs.io/faster_cpython.html
 
 Examples of such optimizers:
 

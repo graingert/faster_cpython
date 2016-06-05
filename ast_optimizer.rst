@@ -22,7 +22,7 @@ See :ref:`old AST optimizer <old-ast-optimizer>`.
 fatoptimizer
 ============
 
-`fatoptimizer project <https://fatoptimizer.readthedocs.org/en/latest/>`_: AST
+`fatoptimizer project <https://fatoptimizer.readthedocs.io/en/latest/>`_: AST
 optimizer implementing multiple optimizations and can specialize functions
 using guards of the ``fat`` module.
 
