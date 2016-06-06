@@ -35,15 +35,15 @@ it will use two versions of some functions where one version is specialised to
 specific argument types, a specific environment, optimized when builtins are
 not mocked, etc.
 
-See the `fatoptimizer documentation <https://fatoptimizer.readthedocs.org/>`_
+See the `fatoptimizer documentation <https://fatoptimizer.readthedocs.io/>`_
 which is the main part of FAT Python.
 
 The FAT Python project is made of multiple parts:
 
-* The `fatoptimizer project <https://fatoptimizer.readthedocs.org/>`_ is the
+* The `fatoptimizer project <https://fatoptimizer.readthedocs.io/>`_ is the
   static optimizer for Python 3.6 using function specialization with guards. It
   is implemented as an AST optimizer.
-* The `fat module <https://fatoptimizer.readthedocs.org/en/latest/fat.html>`_
+* The `fat module <https://fatoptimizer.readthedocs.io/en/latest/fat.html>`_
   is a Python extension module (written in C) implementing fast guards. The
   ``fatoptimizer`` optimizer uses ``fat`` guards to specialize functions.
   ``fat`` guards are used to verify assumptions used to specialize the code. If
@@ -144,9 +144,9 @@ You must get ``fat-opt`` (and not ``opt``).
 How can you contribute?
 =======================
 
-The `fatoptimizer project <https://fatoptimizer.readthedocs.org/>`_ needs the
+The `fatoptimizer project <https://fatoptimizer.readthedocs.io/>`_ needs the
 most love. Currently, the optimizer is not really smart. There is a long `TODO
-list <https://fatoptimizer.readthedocs.org/en/latest/todo.html>`_. Pick a
+list <https://fatoptimizer.readthedocs.io/en/latest/todo.html>`_. Pick a
 simple optimization, try to implement it, send a pull request on GitHub. At
 least, any kind of feedback is useful ;-)
 
