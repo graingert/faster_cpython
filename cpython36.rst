@@ -5,7 +5,7 @@ Projects to optimize CPython 3.6
 Complete or almost complete projects
 ====================================
 
-* `Wordcode <http://bugs.python.org/issue26647>`_
+* **MERGED**: `Wordcode <http://bugs.python.org/issue26647>`_
 
   * New format of bytecode which will allow to fetch opcode+oparg in a single
     16-bit operation.
