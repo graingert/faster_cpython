@@ -271,3 +271,11 @@ Origins of FAT Python
 * :ref:`read-only Python <readonly>`
 * Dave Malcolm wrote a patch modifying Python/eval.c to support specialized
   functions. See the http://bugs.python.org/issue10399
+
+
+See also
+========
+
+* `Ruby:  Deoptimization Engine
+  <https://github.com/ruby/ruby/pull/1419>`_
+
