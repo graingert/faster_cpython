@@ -121,6 +121,8 @@ Install fat::
     cp -v build/lib*/fat.*so ../Lib
     cd ..
 
+For OS X users, use ``./python.exe`` instead of ``./python``.
+
 Install fatoptimizer::
 
     git clone https://github.com/haypo/fatoptimizer
@@ -216,7 +218,7 @@ namespace)::
     >>> len=lambda obj: "mock"
     >>> func()
     'mock'
-    >>> fat.func_get_specialized(func)
+    >>> fat.get_specialized(func)
     []
 
 
