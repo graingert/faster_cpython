@@ -33,6 +33,9 @@ Complete or almost complete projects
 Micro optimizations
 ===================
 
+Open
+----
+
 * `Speedup method calls 1.2x
   <https://bugs.python.org/issue26110>`_
 
@@ -57,13 +60,6 @@ Micro optimizations
   * Owners: Yury Selivanov, Zach Byrne
   * Speed-up: up to 30% faster on microbenchmark.
 
-* `ceval.c: implement fast path for integers with a single digit
-  <https://bugs.python.org/issue21955>`_
-
-  * Owners: many authors :-)
-  * Speedup: up to 26% on microbenchmark, unclear status on macrobenchmark.
-    Unclear status for types other than int and float (slow-down or not?).
-
 * `Free list for single-digits ints <https://bugs.python.org/issue24165>`_
 
   * Owners: Serhiy Storchaka, Yury Selivanov
@@ -74,6 +70,18 @@ Micro optimizations
 
   * Owner: Yury Selivanov
   * Speedup: between 30% and 55% faster on a microbenchmark
+
+:
+Closed
+------
+
+* [CLOSED, REJECTED] `ceval.c: implement fast path for integers with a single digit
+  <https://bugs.python.org/issue21955>`_
+
+  * Owners: many authors :-)
+  * Speedup: up to 26% on microbenchmark, unclear status on macrobenchmark.
+    Unclear status for types other than int and float (slow-down or not?).
+
 
 
 Experimental projects
