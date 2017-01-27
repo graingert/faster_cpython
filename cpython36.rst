@@ -1,6 +1,10 @@
+.. _optimize-cpython36:
+
 ********************************
 Projects to optimize CPython 3.6
 ********************************
+
+See also :ref:`Projects to optimize CPython 3.7 <optimize-cpython37>`.
 
 Complete or almost complete projects
 ====================================
