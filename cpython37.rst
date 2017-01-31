@@ -48,3 +48,25 @@ See also :ref:`Projects to optimize CPython 3.6 <optimize-cpython36>`.
     the peephole optimizer
     <http://bugs.python.org/issue11549>`_
 
+
+* Split PyGC_Head from object (`ML thread <https://mail.python.org/pipermail/python-dev/2017-January/147205.html>`_)
+
+  * sizeof 1-tuple becomes (1 (pointer to gc head) + 3 (PyVarObject) + 1) words from (3 (gc head) + 3 + 1) words.
+
+* Embed some tuples into code object.
+
+  * When ``co_consts`` is ``(None,)``, code object uses 8 (or 6 if above optimization is land) words for
+    the tuple and the pointer to it.  It can be 2 words (length and one PyObject*).
+  * It may reduce RAM usage and improve cache utilization.
+
+* Optimize option for stripping ``__annotation__``.
+
+  * Reduces one dict for each (annotated) functions.
+
+  * ``-O3`` may be OK, but indivisual optimization flag (e.g. ``-Odocstring``) would be better.
+    It affects `PEP 488 <https://www.python.org/dev/peps/pep-0488/>`_.
+
+* Interned-key only dict: Most name lookup uses interned string.  If dict contains only interned keys only,
+  lookup can see only pointer, and hash can be dropped from dict entries.
+  This can reduce memory usage and cache utilization of namespece dicts.
+
