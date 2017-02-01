@@ -26,7 +26,8 @@ See also :ref:`Projects to optimize CPython 3.6 <optimize-cpython36>`.
   * **PENDING**: tp_fastcall: `Issue #29259: Add tp_fastcall to PyTypeObject:
     support FASTCALL calling convention for all callable objects
     <http://bugs.python.org/issue29259>`_
-  * **REJECTED**: tp_fastnew and tp_fastinit
+  * **REJECTED**: `Add tp_fastnew and tp_fastinit to PyTypeObject, 15-20%
+    faster object instanciation <http://bugs.python.org/issue29358>`_
 
 * Convert more C functions to METH_FASTCALL and Argument Clinic
 
