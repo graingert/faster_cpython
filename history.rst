@@ -20,4 +20,6 @@ History of Python optimizations
 * 2014-05: Creation of :ref:`read-only Python <readonly>` PoC by Victor Stinner
 * 2015-10: Creation of the :ref:`FAT Python <fat-python>` project
   by Victor Stinner
-* 2017-31-01: `Dropbox stops funding Pyston <https://blog.pyston.org/2017/01/31/pyston-0-6-1-released-and-future-plans/>`_
+* 2016-01: Creation of Pyjion by Brett Canon and some Microsoft employes
+* 2017-01-03 : `Brett Cannon add a note to say to expect sporadic progress from the project <https://github.com/Microsoft/Pyjion/blob/488d7498f14667c34af291deca87cff6f9cb2507/README.md#a-note-on-development>`_
+* 2017-01-31: `Dropbox stops funding Pyston <https://blog.pyston.org/2017/01/31/pyston-0-6-1-released-and-future-plans/>`_
