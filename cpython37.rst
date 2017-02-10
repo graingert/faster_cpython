@@ -71,3 +71,6 @@ See also :ref:`Projects to optimize CPython 3.6 <optimize-cpython36>`.
   lookup can see only pointer, and hash can be dropped from dict entries.
   This can reduce memory usage and cache utilization of namespece dicts.
 
+* Global freepool: Many types has it's own freepool.  Sharing freepool can increase memory and cache
+  efficiency.  Add ``PyMem_FastFree(void* ptr, size_t size)`` to store memory block to freepool, and
+  ``PyMem_Malloc`` can check global freepool first.
