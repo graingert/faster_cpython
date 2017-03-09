@@ -84,6 +84,10 @@ implementation details, but not all of them. Sadly, it's not popular... not
 sure if it really works in practice. Not sure that it would be feasible to use
 the stable ABI in numpy for example?
 
+The Gilectomy project (CPython without GIL but locks per object) proposes to
+add a new compilation mode for extensions compatible with Gilectomy, but keep
+backward compatibility.
+
 
 New language similar to Python
 ==============================
