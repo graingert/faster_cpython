@@ -9,6 +9,7 @@ Contents:
 
    cpython37.rst
    cpython36.rst
+   notes_2017.rst
    fat_python.rst
    mutable.rst
    optimizations.rst
