@@ -10,6 +10,8 @@ Notes on Python and CPython performance, 2017
     to feed all CPUs.
   * Use a different programming language: rewrite the whole application,
     or at least the functions where the program spend most of its time.
+    Dropbox rewrote performance critical code in Go, then Dropbox stopped to
+    sponsor Pyston.
   * Optimize CPython: solution discussed here. The two other options are not
     always feasible. Rewriting OpenStack in a different language would be
     too expensive for "little gain". Buying more hardware can become too
@@ -48,6 +50,8 @@ Notes on Python and CPython performance, 2017
 JIT compiler
 ============
 
+"Rebase" Pyston on Python 3.7 and continue the project?
+
 Efficient optimizations require type information and assumptions. For example,
 function inlining requires that the inlined function is not modified. Guards
 must be added to deoptimize if something changed, and these guards must be
@@ -74,6 +78,21 @@ Explanation of these failures:
 * Lack of sponsoring: it's just to justify working on Python performances.
   (see: "Spawn more processes! Buy new hardware!")
 * Optimizing Python is harder than expected?
+
+Notes on a JIT compiler for CPython:
+
+* compatibility with CPython must be the most important point, PyPy took years
+  to be fully compatible with CPython, compatibility was one reason of Pyston
+  project failure
+* must run Django faster than CPython: Django, not only microbenchmarks
+* must keep compatibility with the C API
+* be careful of memory usage: major issue in Unladen Swallow, and then Pyston
+
+
+Optimization ahead of time (AoT compiler)
+=========================================
+
+See FAT Python project which adds guards checked at runtime.
 
 
 Break the C API?
