@@ -6,6 +6,25 @@ Projects to optimize CPython 3.7
 
 See also :ref:`Projects to optimize CPython 3.6 <optimize-cpython36>`.
 
+Big projects
+============
+
+* Multiple interepters per process
+
+  * "solving multi-core Python"
+  * https://mail.python.org/pipermail/python-ideas/2015-June/034177.html
+  * http://ericsnowcurrently.blogspot.fr/2016/09/solving-mutli-core-python.html
+
+* `PyParallel <http://pyparallel.org/>`_
+
+* Gilectomy: GIL-less CPython
+
+* Add a JIT to CPython? :-) (see Pyston and Pyjion)
+
+
+Smaller projects
+================
+
 * **MERGED**: `Issue #26110: LOAD_METHOD and CALL_METHOD
   <http://bugs.python.org/issue26110>`_
 
@@ -48,7 +67,6 @@ See also :ref:`Projects to optimize CPython 3.6 <optimize-cpython36>`.
   * `Issue #11549: Build-out an AST optimizer, moving some functionality out of
     the peephole optimizer
     <http://bugs.python.org/issue11549>`_
-
 
 * Split PyGC_Head from object (`ML thread <https://mail.python.org/pipermail/python-dev/2017-January/147205.html>`_)
 
