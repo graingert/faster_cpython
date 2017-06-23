@@ -109,7 +109,7 @@ Getting started
 
 Compile Python 3.6 patched with PEP 509, PEP 510 and PEP 511::
 
-    hg clone http://hg.python.org/sandbox/fatpython
+    git clone https://github.com/haypo/cpython.git@fatpython fatpython
     cd fatpython
     ./configure --with-pydebug CFLAGS="-O0" && make
 
