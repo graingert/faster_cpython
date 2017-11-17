@@ -12,8 +12,7 @@ History of Python optimizations
 * mid-2007: PyPy 1.0 released.
 * 2009-03: `Creation of Unladen Swallow project <https://en.wikipedia.org/wiki/CPython#Unladen_Swallow>`_ by some Google employees
 * 2010-Q1: `Google stops funding Unladden Swallow <http://qinsb.blogspot.com/2011/03/unladen-swallow-retrospective.html>`_
-* 2012-09: Creation of the :ref:`AST optimizer <old-ast-optimizer>` project by
-  Victor Stinner
+* 2012-09: Creation of the astoptimizer project by Victor Stinner
 * 2012-11: Creation of the :ref:`registervm <registervm>` project by
   Victor Stinner
 * 2014-04-03: `Creation of Pyston project <https://blogs.dropbox.com/tech/2014/04/introducing-pyston-an-upcoming-jit-based-python-implementation/>`_ by Kevin Modzelewsk and the Dropbox team

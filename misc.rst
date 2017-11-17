@@ -15,9 +15,6 @@ Plan
 
 * Modify CPython to be :ref:`notified when the Python code is changed <py-notify-code-change>`
 * :ref:`Learn types <learn-types>` of function parameters and variables
-* Compile a specialized version of a function using types and platform
-  informations: more efficient bytecode using an :ref:`AST optimizer <py-astoptimizer>`, or even :ref:`emit machine code <py-machine-code>`. The
-  compilation is done once and not during the execution, it's not a JIT.
 * :ref:`Choose between bytecode and specialized code <py-choose-specialized>`
   at runtime
 
@@ -33,20 +30,16 @@ Status
 ======
 
 .. _py-notify-code-change:
-.. _py-astoptimizer:
 
 
 See also the status of individual projects:
 
 * `READONLY.txt <http://hg.python.org/sandbox/readonly/file/tip/READONLY.txt>`_
 * `REGISTERVM.txt <http://hg.python.org/sandbox/registervm/file/tip/REGISTERVM.txt>`_
-* `astoptimizer TODO list <https://bitbucket.org/haypo/astoptimizer/src/tip/TODO>`_
 
 Done
 ----
 
-* astoptimizer project exists:
-  `astoptimizer <https://bitbucket.org/haypo/astoptimizer>`_.
 * Fork of CPython 3.5: be notified when the Python code is changed:
   modules, types and functions are tracked. My fork of CPython 3.5: `readonly
   <http://hg.python.org/sandbox/readonly>`_; read `READONLY.txt
@@ -57,13 +50,6 @@ Done
 
    "readonly" is no more a good name for the project. The name comes from
    a first implementation using read-only code.
-
-To do
------
-
-* Learn types
-* Enhance astoptimizer to use the type information
-* Emit machine code
 
 
 Why Python is slow?

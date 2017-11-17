@@ -269,7 +269,6 @@ Remember that you cannot import .py files in this case, only .pyc::
 Origins of FAT Python
 =====================
 
-* :ref:`Old AST optimizer project <old-ast-optimizer>`
 * :ref:`read-only Python <readonly>`
 * Dave Malcolm wrote a patch modifying Python/eval.c to support specialized
   functions. See the http://bugs.python.org/issue10399

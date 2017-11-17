@@ -13,12 +13,6 @@ produce a more efficient code.
 Currently in CPython 3.5, only basic optimizations are implemented by rewriting
 the bytecode: :ref:`CPython peephole optimizer <cpython-peephole>`.
 
-Old AST optimizer project
-=========================
-
-See :ref:`old AST optimizer <old-ast-optimizer>`.
-
-
 fatoptimizer
 ============
 
