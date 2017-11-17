@@ -134,7 +134,7 @@ Experimental projects
     microbenchmark)
 
 * New peephole optimizer written in pure Python: `bytecode.peephole_opt
-  <https://github.com/haypo/bytecode/blob/master/bytecode/peephole_opt.py>`_,
+  <https://github.com/vstinner/bytecode/blob/master/bytecode/peephole_opt.py>`_,
   requires the PEP 511.
 
   * Speed-up: probably negligible, and the Python optimizer is much slower

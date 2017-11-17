@@ -109,13 +109,13 @@ Getting started
 
 Compile Python 3.6 patched with PEP 509, PEP 510 and PEP 511::
 
-    git clone https://github.com/haypo/cpython -b fatpython fatpython
+    git clone https://github.com/vstinner/cpython -b fatpython fatpython
     cd fatpython
     ./configure --with-pydebug CFLAGS="-O0" && make
 
 Install fat::
 
-    git clone https://github.com/haypo/fat
+    git clone https://github.com/vstinner/fat
     cd fat
     ../python setup.py build
     cp -v build/lib*/fat.*so ../Lib
@@ -125,7 +125,7 @@ For OS X users, use ``./python.exe`` instead of ``./python``.
 
 Install fatoptimizer::
 
-    git clone https://github.com/haypo/fatoptimizer
+    git clone https://github.com/vstinner/fatoptimizer
     (cd Lib; ln -s ../fatoptimizer/fatoptimizer .)
 
 ``fatoptimizer`` is registed by the ``site`` module if ``-X fat`` command line
