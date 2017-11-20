@@ -33,9 +33,7 @@ This fork on CPython 3.5 adds a machinery to be notified when the Python code
 is modified. Modules, classes (types) and functions are tracked. At the first
 modification, a callback is called with the object and the modified attribute.
 
-This machinery should help static optimizers. See this article for more
-information:
-https://haypo-notes.readthedocs.io/faster_cpython.html
+This machinery should help static optimizers.
 
 Examples of such optimizers:
 

@@ -86,14 +86,14 @@ The FAT Python project is made of multiple parts:
 Announcements and status reports:
 
 * `Status of the FAT Python project, January 12, 2016
-  <https://haypo.github.io/fat-python-status-janv12-2016.html>`_
+  <https://vstinner.github.io/fat-python-status-janv12-2016.html>`_
 * `'FAT' and fast: What's next for Python
   <http://www.infoworld.com/article/3020450/application-development/fat-fast-whats-next-for-python.html>`_:
   Article of InfoWorld by Serdar Yegulalp (January 11, 2016)
 * [Python-Dev] `Third milestone of FAT Python
   <https://mail.python.org/pipermail/python-dev/2015-December/142397.html>`_
 * `Status of the FAT Python project, November 26, 2015
-  <https://haypo.github.io/fat-python-status-nov26-2015.html>`_
+  <https://vstinner.github.io/fat-python-status-nov26-2015.html>`_
 * [python-dev] `Second milestone of FAT Python
   <https://mail.python.org/pipermail/python-dev/2015-November/142113.html>`_
   (Nov 2015)
