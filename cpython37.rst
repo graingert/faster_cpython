@@ -42,7 +42,7 @@ Smaller projects
 * `Free list for single-digits ints <http://bugs.python.org/issue24165>`_
 * FASTCALL
 
-  * **PENDING**: tp_fastcall: `Issue #29259: Add tp_fastcall to PyTypeObject:
+  * **REJECTED**: tp_fastcall: `Issue #29259: Add tp_fastcall to PyTypeObject:
     support FASTCALL calling convention for all callable objects
     <http://bugs.python.org/issue29259>`_
   * **REJECTED**: `Add tp_fastnew and tp_fastinit to PyTypeObject, 15-20%
