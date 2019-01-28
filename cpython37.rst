@@ -82,7 +82,7 @@ Smaller projects
 
   * Reduces one dict for each (annotated) functions.
 
-  * ``-O3`` may be OK, but indivisual optimization flag (e.g. ``-Odocstring``) would be better.
+  * ``-O3`` may be OK, but individual optimization flag (e.g. ``-Odocstring``) would be better.
     It affects `PEP 488 <https://www.python.org/dev/peps/pep-0488/>`_.
 
 * Interned-key only dict: Most name lookup uses interned string.  If dict contains only interned keys only,
