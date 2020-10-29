@@ -426,7 +426,7 @@ GC programs.  See “func runGCProg” in the mbitmap.c source file. It is sort 
 a little bytecode interpreter that the GC runs to learn which pointers inside
 an object are pointers to other objects. Is it possible this could be used for
 speeding up tp_traverse or tp_clear somehow? It seems Go only uses it if the
-object has lots of internal pointers. Comment from source file is below:
+object has lots of internal pointers. Comment from source file is below::
 
     // Packed GC pointer bitmaps, aka GC programs.
     //
