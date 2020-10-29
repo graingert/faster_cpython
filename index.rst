@@ -7,6 +7,7 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
+   tracing_gc.rst
    cpython37.rst
    cpython36.rst
    notes_2017.rst

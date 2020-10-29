@@ -22,29 +22,29 @@ Notes on Python and CPython performance, 2017
   * Weak typing: function prototypes don't have to define types of parameters
     and the return value. Annotations are fully optional and there is no plan
     to make type checks mandatory.
- * Python semantics: Python has powerful features which prevents optimizations.
-   Examples: introspection and monkey-patching. A simple instruction like
-   ``obj.attr`` can call ``type(obj).__getattr__(attr)`` or
-   ``type(obj).__getattribute__(attr)``, but it also requires to handle
-   descriptors: call ``descr.__get__(obj)``... It's not always a simple
-   dictionary lookup. It's not allowed to replace ``len("abc")`` with ``3``
-   without a guard on the ``len`` global variable and the ``len()`` builtin
-   function.
+  * Python semantics: Python has powerful features which prevents optimizations.
+    Examples: introspection and monkey-patching. A simple instruction like
+    ``obj.attr`` can call ``type(obj).__getattr__(attr)`` or
+    ``type(obj).__getattribute__(attr)``, but it also requires to handle
+    descriptors: call ``descr.__get__(obj)``... It's not always a simple
+    dictionary lookup. It's not allowed to replace ``len("abc")`` with ``3``
+    without a guard on the ``len`` global variable and the ``len()`` builtin
+    function.
 
 * CPython optimizations are limited by:
 
   * Age of its implementation: 20 years ago, phones didn't have 4 CPUs.
   * CPython implementation was designed to be simple to maintain, performance
     was not a design goal.
- * CPython exposes basically all its internal in a "C API" which is *widely*
-   used by Python extensions modules (written in C) like numpy.
- * The C API exposes major implementation design choices:
+  * CPython exposes basically all its internal in a "C API" which is *widely*
+    used by Python extensions modules (written in C) like numpy.
+  * The C API exposes major implementation design choices:
 
-   * Reference counting
-   * A specific implementation of garbage collector
-   * Global Interpreter Lock (GIL)
-   * C structures: C extensions *can* access structure members, not everything
-     is hidden in macros or functions.
+    * Reference counting
+    * A specific implementation of garbage collector
+    * Global Interpreter Lock (GIL)
+    * C structures: C extensions *can* access structure members, not everything
+      is hidden in macros or functions.
 
 
 JIT compiler
