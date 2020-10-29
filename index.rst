@@ -7,6 +7,7 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
+   garbage_collection.rst
    tracing_gc.rst
    cpython37.rst
    cpython36.rst
