@@ -1,16 +1,25 @@
-++++++++++++++++++++++++++++++++
+.. _tracing-gc:
+
+++++++++++++++++++++++
+Tracing GC for CPython
+++++++++++++++++++++++
+
+See also :ref:`CPython Garbage Collection <gc>`.
+
 CPython GC Meeting, Oct 24, 2020
-++++++++++++++++++++++++++++++++
+================================
+
+During the online Python core dev sprint.
 
 Attending
-=========
+---------
 
 * Neil Schemenauer
 * Joannah Nanjekye
 * Pablo Galindo Salgado
 
 Agenda
-======
+------
 
 * How to do the roots for tracing GC? Explain to Neil how could work.
 * Define why a tracing a GC for CPython would be worthwhile (for CPython
@@ -19,7 +28,7 @@ Agenda
   support from core Python devs)
 
 CPython tracing GC design, Constraints
-======================================
+--------------------------------------
 
 * Must allow 3 rd party C extensions to compile and work without major source
   code changes
@@ -50,7 +59,7 @@ CPython tracing GC design, Constraints
     causes issue them
 
 GC Properties
-=============
+-------------
 
 * GC pause time (current Python GC is stop-the-world but collection of younger
   generations is very fast, collection of oldest generation is much slower and
@@ -61,7 +70,7 @@ GC Properties
 * Support for powerful finalizers
 
 Which kind of GC can meet contraints above
-==========================================
+------------------------------------------
 
 * It could be moving GC but needs to provide stable object pointers for
   external C API
@@ -71,7 +80,7 @@ Which kind of GC can meet contraints above
   speedup
 
 Define why a tracing a GC for CPython would be worthwhile
-=========================================================
+---------------------------------------------------------
 
 * Allow finer grain locking (remove big GIL lock)
 * RC on multi-core machines is not efficient, even if GIL remains
