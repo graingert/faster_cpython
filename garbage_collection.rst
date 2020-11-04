@@ -173,7 +173,7 @@ Discussion summary
 
 * Existing GC libraries, frameworks that might be integrated
 
-  * IBM OMR (C++)
+  * Eclipse OMR (C++)
   * MMTk (high performance, cutting edge GC, Rust backend, C API)
 
 * Handling finalizers, e.g. calling finalizers in reference cycles (Boehm GC doesn’t call
